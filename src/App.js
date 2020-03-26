@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
-import { TodoContext } from "./contexts/TodoContext";
+import Navbar from "./components/Navbar";
+import TodoContextProvider from "./contexts/TodoContext";
 
 const App = () => {
   return (
     <div className="App">
-      <TodoContext></TodoContext>
+      <TodoContextProvider>
+        <Navbar></Navbar>
+      </TodoContextProvider>
     </div>
   );
 };

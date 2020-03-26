@@ -15,7 +15,11 @@ const TodoContextProvider = props => {
   const removeTodo = id => {
     setTodos(todos.filter(todo => todo.id !== id));
   };
-  return <TodoContextProvider value={...todos, addTodo, removeTodo}>{props.childeren}</TodoContextProvider>;
+  return (
+    <TodoContext.Provider value={{ todos, addTodo, removeTodo }}>
+      {props.children}
+    </TodoContext.Provider>
+  );
 };
 
 export default TodoContextProvider;
