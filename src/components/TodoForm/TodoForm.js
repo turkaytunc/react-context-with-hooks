@@ -4,8 +4,8 @@ import "./todo-form.scss";
 
 const TodoForm = () => {
   const { addTodo } = useContext(TodoContext);
-  const [todoTitle, setTodoTitle] = useState("initial");
-  const [todoContent, setTodoContent] = useState("cont");
+  const [todoTitle, setTodoTitle] = useState("");
+  const [todoContent, setTodoContent] = useState("");
 
   const handleSubmit = event => {
     event.preventDefault();

@@ -2,6 +2,7 @@
   background: #4ba0b9;
   border-left: 1px solid aliceblue;
   border-bottom: 1px solid rgb(34, 15, 8);
+  margin-bottom: .5rem;
   border-radius: 5px;
 
 
@@ -20,12 +21,14 @@
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: bold;
-  color: rgb(37, 45, 65);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
 }
 
 .todo-details-content {
   min-height: minmax(50px, auto);
   color: aliceblue;
+  text-shadow: 1px 1px black;
   font-weight: lighter;
 
 }
