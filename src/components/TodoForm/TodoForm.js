@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { TodoContext } from "../../contexts/TodoContext";
+import "./todo-form.scss";
 
 const TodoForm = () => {
   const { addTodo } = useContext(TodoContext);
@@ -13,20 +14,24 @@ const TodoForm = () => {
     setTodoContent("");
   };
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="todo-form">
       <input
+        className="todo-form-input"
         type="text"
         required
         value={todoTitle}
         onChange={event => setTodoTitle(event.target.value.slice(0, 20))}
       ></input>
       <input
+        className="todo-form-input"
         type="text"
         required
         value={todoContent}
         onChange={event => setTodoContent(event.target.value.slice(0, 140))}
       ></input>
-      <button type="submit">Add todo</button>
+      <button className="todo-form-button" type="submit">
+        Add todo
+      </button>
     </form>
   );
 };

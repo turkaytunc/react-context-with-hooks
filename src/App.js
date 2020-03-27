@@ -12,6 +12,7 @@ const App = () => {
         <Navbar></Navbar>
         <TodoList></TodoList>
         <TodoForm></TodoForm>
+        <div>cons</div>
       </TodoContextProvider>
     </div>
   );

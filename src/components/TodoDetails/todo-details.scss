@@ -1,5 +1,5 @@
 .todo-details-li {
-  background: rgb(162, 186, 207);
+  background: #4ba0b9;
   border-left: 1px solid aliceblue;
   border-bottom: 1px solid rgb(34, 15, 8);
   border-radius: 5px;
@@ -20,12 +20,12 @@
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: bold;
-  color: black;
+  color: rgb(37, 45, 65);
 }
 
 .todo-details-content {
   min-height: minmax(50px, auto);
-  color: rgb(253, 234, 65);
+  color: aliceblue;
   font-weight: lighter;
 
 }
