@@ -1,16 +1,19 @@
 import React, { useContext } from "react";
 import { TodoContext } from "../contexts/TodoContext";
+import TodoDetails from "./TodoDetails";
 
 const TodoList = () => {
   const { todos } = useContext(TodoContext);
-  return (
+  return todos.length ? (
     <div>
       <ul>
         {todos.map(todo => {
-          return <li>{todo.content}</li>;
+          return <TodoDetails todo={todo}></TodoDetails>;
         })}
       </ul>
     </div>
+  ) : (
+    <div>Nothing to do!!</div>
   );
 };
 
