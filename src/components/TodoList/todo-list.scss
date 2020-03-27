@@ -1,5 +1,5 @@
 .todo-list-ul {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(100px, 25vw));
 }

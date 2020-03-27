@@ -6,7 +6,7 @@ import "./todo-list.scss";
 const TodoList = () => {
   const { todos } = useContext(TodoContext);
   return todos.length ? (
-    <div>
+    <div className="todo-list-div">
       <ul className="todo-list-ul">
         {todos.map(todo => {
           return <TodoDetails todo={todo} key={todo.id}></TodoDetails>;

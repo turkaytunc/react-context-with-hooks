@@ -5,10 +5,30 @@ export const TodoContext = createContext();
 
 const TodoContextProvider = props => {
   const [todos, setTodos] = useState([
-    { title: "todo1", content: "ilk deneme icerigi", id: 1 },
-    { title: "todo2", content: "ikinci deneme icerigi", id: 2 },
-    { title: "todo3", content: "ucuncu deneme icerigi", id: 3 },
-    { title: "todo4", content: "dorduncu deneme icerigi", id: 4 }
+    {
+      title: "todo1ggggggggggggggggggggg",
+      content:
+        "ilk deneme icerigiilk deneme icerigiilk deneme icerigiilk deneme icerigi",
+      id: 1
+    },
+    {
+      title: "todo2gggggggggggggggggggggg",
+      content:
+        "ikinci deneme icerigiikinci deneme icerigiikinci deneme icerigiikinci deneme icerigi",
+      id: 2
+    },
+    {
+      title: "todo3ggggggggggggggggggggggg",
+      content:
+        "ucuncu deneme icerigiucuncu deneme icerigiucuncu deneme icerigiucuncu deneme icerigiucuncu deneme icerigi",
+      id: 3
+    },
+    {
+      title: "todo4hhhhhhhhhhhhhhhh",
+      content:
+        "dorduncu deneme icerigidorduncu deneme icerigidorduncu deneme icerigi",
+      id: 4
+    }
   ]);
 
   const addTodo = (title, content) => {
