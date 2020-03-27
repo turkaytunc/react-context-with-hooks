@@ -4,3 +4,12 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(100px, 25vw));
 }
+
+@media only screen and (max-width: 400px) {
+  .todo-list-ul {
+    margin-top: 0.5rem;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 50vw));
+  }
+}

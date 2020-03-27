@@ -15,7 +15,7 @@
 
 .todo-form-button {
     height: 1.5rem;
-    width: 5rem;
+    width: 3rem;
     background: #4ba0b9;
     border: none;
     border-radius: 2px;
@@ -25,5 +25,18 @@
         background: #1c93b8;
         color: white;
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .todo-form {
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .todo-form-button {
+        width: auto;
     }
 }
