@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
 import { TodoContext } from "../../contexts/TodoContext";
 import TodoDetails from "../TodoDetails/TodoDetails";
+import "./todo-list.scss";
 
 const TodoList = () => {
   const { todos } = useContext(TodoContext);
   return todos.length ? (
     <div>
-      <ul>
+      <ul className="todo-list-ul">
         {todos.map(todo => {
-          return <TodoDetails todo={todo}></TodoDetails>;
+          return <TodoDetails todo={todo} key={todo.id}></TodoDetails>;
         })}
       </ul>
     </div>

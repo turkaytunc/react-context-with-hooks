@@ -1,0 +1,23 @@
+.todo-details-li {
+  background: rgb(162, 186, 207);
+  border-left: 1px solid aliceblue;
+
+  &:first-child {
+    border-left: none;
+  }
+}
+
+.todo-details-p {
+  text-align: center;
+}
+
+.todo-details-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.todo-details-content {
+  background: black;
+  color: orange;
+}

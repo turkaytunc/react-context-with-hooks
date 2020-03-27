@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { TodoContext } from "../../contexts/TodoContext";
+import "./todo-details.scss";
 
 const TodoDetails = ({ todo }) => {
+  const { removeTodo } = useContext(TodoContext);
   return (
-    <li>
-      <h4 style={{ display: "inline", marginRight: "1rem" }}>{todo.title}</h4>
-      <p style={{ display: "inline" }}>{todo.content}</p>
+    <li onClick={() => removeTodo(todo.id)} className="todo-details-li">
+      <p className="todo-details-p todo-details-title">{todo.title}</p>
+      <p className="todo-details-p todo-details-content">{todo.content}</p>
     </li>
   );
 };
