@@ -14,7 +14,9 @@ const TodoList = () => {
       </ul>
     </div>
   ) : (
-    <div>Congratulations! Nothing left to do!!</div>
+    <div style={{ fontSize: "2rem", textAlign: "center", margin: "1rem 0" }}>
+      Congratulations! Nothing left to do!!
+    </div>
   );
 };
 
