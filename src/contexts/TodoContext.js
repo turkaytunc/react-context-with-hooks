@@ -1,35 +1,16 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState, useEffect } from "react";
 import uuid from "uuid/v1";
 
 export const TodoContext = createContext();
 
 const TodoContextProvider = props => {
-  const [todos, setTodos] = useState([
-    {
-      title: "todo1ggggggggggggggggggggg",
-      content:
-        "ilk deneme icerigiilk deneme icerigiilk deneme icerigiilk deneme icerigi",
-      id: 1
-    },
-    {
-      title: "todo2gggggggggggggggggggggg",
-      content:
-        "ikinci deneme icerigiikinci deneme icerigiikinci deneme icerigiikinci deneme icerigi",
-      id: 2
-    },
-    {
-      title: "todo3ggggggggggggggggggggggg",
-      content:
-        "ucuncu deneme icerigiucuncu deneme icerigiucuncu deneme icerigiucuncu deneme icerigiucuncu deneme icerigi",
-      id: 3
-    },
-    {
-      title: "todo4hhhhhhhhhhhhhhhh",
-      content:
-        "dorduncu deneme icerigidorduncu deneme icerigidorduncu deneme icerigi",
-      id: 4
-    }
-  ]);
+  const localItems = localStorage.getItem("storedTodos");
+
+  const [todos, setTodos] = useState(localItems ? JSON.parse(localItems) : []);
+
+  useEffect(() => {
+    localStorage.setItem("storedTodos", JSON.stringify(todos));
+  }, [todos]);
 
   const addTodo = (title, content) => {
     setTodos([...todos, { title, content, id: uuid() }]);
