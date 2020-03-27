@@ -8,7 +8,7 @@ const TodoContextProvider = props => {
     { title: "todo1", content: "ilk deneme icerigi", id: 1 },
     { title: "todo2", content: "ikinci deneme icerigi", id: 2 },
     { title: "todo3", content: "ucuncu deneme icerigi", id: 3 },
-    { title: "todo4", content: "dorduncu deneme icerigi", id: 3 }
+    { title: "todo4", content: "dorduncu deneme icerigi", id: 4 }
   ]);
 
   const addTodo = (title, content) => {
