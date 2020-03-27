@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
-import { TodoContext } from "../contexts/TodoContext";
+import { TodoContext } from "../../contexts/TodoContext";
+import "./navbar.scss";
 
 const Navbar = () => {
   const { todos } = useContext(TodoContext);
   return (
     <div>
       <h1
+        className="div-h1"
         style={{
           background: "#333",
           color: "aliceblue",
