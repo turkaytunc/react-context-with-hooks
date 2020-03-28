@@ -9,6 +9,13 @@
   &:first-child {
     border-left: none;
   }
+
+  &:hover {
+    background: #1c93b8;
+    color: white;
+    cursor: pointer;
+    text-decoration: line-through;
+  }
 }
 
 .todo-details-p {

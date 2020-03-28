@@ -1,15 +1,15 @@
 .todo-form {
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 3fr 3fr 1fr 10fr;
     margin-bottom: 2rem;
-    width: 70%;
     align-items: center;
     justify-content: center;
 
 }
 
 .todo-form-input {
-    height: 1.5rem;
+    display: inline-block;
+    width: 70%;
 }
 
 .todo-form-button {

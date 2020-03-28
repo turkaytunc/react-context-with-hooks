@@ -15,20 +15,32 @@ const TodoForm = () => {
   };
   return (
     <form onSubmit={handleSubmit} className="todo-form">
-      <input
-        className="todo-form-input"
-        type="text"
-        required
-        value={todoTitle}
-        onChange={event => setTodoTitle(event.target.value.slice(0, 20))}
-      ></input>
-      <input
-        className="todo-form-input"
-        type="text"
-        required
-        value={todoContent}
-        onChange={event => setTodoContent(event.target.value.slice(0, 140))}
-      ></input>
+      <div>
+        <label htmlFor="todoTitle" style={{ display: "inline" }}>
+          Title
+        </label>
+        <input
+          name="todoTitle"
+          className="todo-form-input"
+          type="text"
+          required
+          value={todoTitle}
+          onChange={event => setTodoTitle(event.target.value.slice(0, 20))}
+        ></input>
+      </div>
+      <div>
+        <label htmlFor="todoContent" style={{ display: "inline" }}>
+          Content
+        </label>
+        <input
+          name="todoContent"
+          className="todo-form-input"
+          type="text"
+          required
+          value={todoContent}
+          onChange={event => setTodoContent(event.target.value.slice(0, 140))}
+        ></input>
+      </div>
       <button className="todo-form-button" type="submit">
         Add todo
       </button>
