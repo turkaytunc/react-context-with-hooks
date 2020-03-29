@@ -1,5 +1,5 @@
 const TodoContext = require("./TodoContext");
 
-test("Adds 2 + 2 to equal  4", () => {
-  expect(TodoContext.add(2, 2)).toBe(4);
+test("Adds 4 - 4 to equal 0", () => {
+  expect(TodoContext.sub(4, 4)).toBe(0);
 });
